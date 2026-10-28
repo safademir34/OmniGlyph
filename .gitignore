@@ -32,7 +32,10 @@ __pycache__/
 # transient session artifacts below stay local-only.
 HANDOFF.md
 SESSION_PLAYBOOK.md
-.claude/
+.claude/*
+# The cloud-session SessionStart hook is shared config, not a session artifact.
+!.claude/settings.json
+!.claude/hooks/
 .codex/
 .cursor/
 .aider*
